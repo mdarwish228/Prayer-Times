@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Prayer</string>
+    <string name="cities">Cities</string>
+    <string name="times">Times</string>
+</resources>

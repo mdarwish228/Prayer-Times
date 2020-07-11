@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="MainTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="MainTheme">
+        <item name="android:windowBackground">@drawable/ic_splash_screen</item>
+    </style>
+
+    <style name="TextTheme" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textColor">#FFEB3B</item>
+    </style>
+
+    <style name="ToolbarTitleTheme">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="ToolBarTheme" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+</resources>
