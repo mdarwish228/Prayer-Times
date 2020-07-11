@@ -3,8 +3,10 @@ package com.darwish.prayertimes.splashscreen
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.GrantPermissionRule
+import com.darwish.prayertimes.cities.CitiesActivity
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -22,7 +24,8 @@ class SplashScreenActivityTest {
         GrantPermissionRule.grant(android.Manifest.permission.ACCESS_FINE_LOCATION)
 
     @Test
-    fun happyPath() {
+    fun testPermissionGrantedSucceeds() {
         ActivityScenario.launch(SplashScreenActivity::class.java)
+        assert(true)
     }
 }

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Prayer</string>
-    <string name="cities">Cities</string>
+    <string name="feature_not_available_title">Feature Not Available</string>
+    <string name="feature_not_available_body">Please restart the application and enable the location permission to continue</string>
+
     <string name="times">Times</string>
 </resources>
