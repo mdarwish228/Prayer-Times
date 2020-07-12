@@ -1,5 +1,5 @@
 <resources>
-
+    <!-- Main Themes -->
     <style name="MainTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,16 +10,30 @@
         <item name="android:windowBackground">@drawable/ic_splash_screen</item>
     </style>
 
-    <style name="TextTheme" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="android:textColor">#FFEB3B</item>
-    </style>
+    <!-- Toolbar Themes -->
 
-    <style name="ToolbarTitleTheme">
-        <item name="android:textSize">34sp</item>
-    </style>
-
-    <style name="ToolBarTheme" parent="Widget.MaterialComponents.Toolbar">
+    <style name="ToolBarTheme">
         <item name="android:background">@color/colorPrimary</item>
-        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <!-- Text Themes -->
+    <style name="Text">
+        <item name="android:fontFamily">@font/athiti</item>
+    </style>
+    <style name="Text.Label">
+        <item name="android:fontFamily">@font/athiti_extralight</item>
+    </style>
+
+    <style name="Text.LabelValue">
+        <item name="android:fontFamily">@font/athiti_medium</item>
+    </style>
+
+    <style name="Text.Header">
+        <item name="android:textSize">@dimen/header_font_size</item>
+    </style>
+
+    <style name="Text.Body">
+        <item name="android:textSize">@dimen/body_font_size</item>
     </style>
 </resources>

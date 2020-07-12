@@ -1,2 +1,4 @@
 <resources>
+    <dimen name="header_font_size">34sp</dimen>
+    <dimen name="body_font_size">16sp</dimen>
 </resources>
