@@ -16,8 +16,8 @@
             android:layout_marginBottom="8dp"
             android:text="@string/feature_not_available_title"
             android:textAlignment="center"
-            android:textAppearance="@style/Display2TextTheme"
-            app:layout_constraintBottom_toTopOf="@+id/divider"
+            android:textAppearance="@style/Text.Header"
+            app:layout_constraintBottom_toTopOf="@+id/title_horizontal_divider"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
@@ -31,32 +31,32 @@
             android:layout_marginEnd="16dp"
             android:text="@string/feature_not_available_body"
             android:textAlignment="center"
-            android:textAppearance="@style/smallTextTheme"
+            android:textAppearance="@style/Text.Body"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.437"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider" />
+            app:layout_constraintTop_toBottomOf="@+id/title_horizontal_divider" />
 
     <View
-            android:id="@+id/divider"
+            android:id="@+id/title_horizontal_divider"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/right_divider_guidance"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/left_divider_guidance"
             app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
+            android:id="@+id/left_divider_guidance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.4" />
 
     <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
+            android:id="@+id/right_divider_guidance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"

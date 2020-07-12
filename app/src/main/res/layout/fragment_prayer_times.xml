@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".praytimes.PrayerTimesFragment">
+
+    <com.darwish.prayertimes.praytimes.PrayerTimeView
+            android:id="@+id/fajr_prayer_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:prayer_time_label="Fajr"
+            app:prayer_time_value="5:00 AM" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+    <com.darwish.prayertimes.praytimes.PrayerTimeView
+            android:id="@+id/duhr_prayer_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fajr_prayer_time"
+            app:prayer_time_label="Duhr"
+            app:prayer_time_value="12:00 PM" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+    <com.darwish.prayertimes.praytimes.PrayerTimeView
+            android:id="@+id/asr_prayer_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/duhr_prayer_time"
+            app:layout_constraintVertical_bias="0.744"
+            app:prayer_time_label="Asr"
+            app:prayer_time_value="4:00 PM" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+    <com.darwish.prayertimes.praytimes.PrayerTimeView
+            android:id="@+id/maghrib_prayer_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_80"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asr_prayer_time"
+            app:layout_constraintVertical_bias="0.521"
+            app:prayer_time_label="Maghrib"
+            app:prayer_time_value="7:00 PM" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+    <com.darwish.prayertimes.praytimes.PrayerTimeView
+            android:id="@+id/isha_prayer_time"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maghrib_prayer_time"
+            app:prayer_time_label="Isha"
+            app:prayer_time_value="9:00 PM" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

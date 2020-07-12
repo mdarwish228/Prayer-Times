@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PrayerTimeView">
+        <attr name="prayer_time_label" format="string"/>
+        <attr name="prayer_time_value" format="string"/>
+    </declare-styleable>
+</resources>

@@ -34,6 +34,6 @@ class CitiesActivityTest {
 
     @Test
     fun testDividerExists() {
-        onView(withId(R.id.divider)).check(matches(isDisplayed()))
+        onView(withId(R.id.title_horizontal_divider)).check(matches(isDisplayed()))
     }
 }
